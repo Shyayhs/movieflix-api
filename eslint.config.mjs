@@ -4,29 +4,29 @@ import globals from "globals";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig([
-    { files: ["**/*.{js,mjs,cjs,ts,mts,cts}"], plugins: { js }, extends: ["js/recommended"] },
-    { files: ["**/*.{js,mjs,cjs,ts,mts,cts}"], languageOptions: { globals: globals.node } },
-    {
-        "rules": {
-            "no-unused-vars": "warn",
-            "no-undef": "warn",
-            "indent": [
-                "error",
-                4
-            ],
-            "linebreak-style": [
-                "error",
-                "windows"
-            ],
-            "quotes": [
-                "error",
-                "double"
-            ],
-            "semi": [
-                "error",
-                "always"
-            ]
-        },
+  { files: ["**/*.{js,mjs,cjs,ts,mts,cts}"], plugins: { js }, extends: ["js/recommended"] },
+  { files: ["**/*.{js,mjs,cjs,ts,mts,cts}"], languageOptions: { globals: globals.node } },
+  {
+    "rules": {
+      "no-unused-vars": "warn",
+      "no-undef": "warn",
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "windows"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ]
     },
-    // tseslint.configs.recommended
+  },
+  // tseslint.configs.recommended
 ]);
