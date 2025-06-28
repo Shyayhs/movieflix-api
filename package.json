@@ -25,6 +25,7 @@
     "@prisma/client": "^6.9.0",
     "@types/express": "^5.0.3",
     "@types/swagger-ui-express": "^4.1.8",
+    "docker-compose": "^1.2.0",
     "express": "^5.1.0",
     "swagger-ui-express": "^5.0.1"
   }
